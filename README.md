@@ -6,6 +6,7 @@
   <li><a href="#1">Introdução</a></li>
   <li><a href="#2">GitHub, Git e VSCode</a></li>
   <li><a href="#3">Clean Code</a></li>
+  <li><a href="#4">Tags em HTML</a></li>
 </ul>
 
 <h2 id="1">:pencil: Introdução</h2>
@@ -38,10 +39,12 @@
     <li><code> git add </code> preparar as alterações para incluí-las no histórico do projeto.</li>
     <li><code> git commit </code> salvar as alterações e conclui o processo de controle de alterações.</li>
     <li><code> git status </code> mostrar o status das arquivos como adicionados, modificados ou excluídos.</li>
-    <li><code> git branch </code> mostrar as branches e criar novas.</li>
+    <li><code> git branch </code> mostrar as branches existentes no repositório.</li>
+    <li><code> git checkout -b </code> criar e mudar para uma nova branch.</li>
     <li><code> git merge </code> mesclar as alterações feitas em dois branches distintos.</li>
     <li><code> git pull </code> atualizar a branch local com atualizações do equivalente remoto.</li>
     <li><code> git push </code> atualizar o repositório remoto com os commits feito localmente.</li>
+    <li><code> git log </code> mostrar as commits e versões do repositório.</li>
   </ul>
 </p>
 
@@ -51,3 +54,42 @@
 <p>
   Para configurar VSCode como editor padrão para o Git, basta rodar o comando <code>git config --global core.editor "code-wait"</code>. Também há como definir o VSCode como editor padrão durante a instalação do Git, para usar basta rodar o comando <code>code .</code> dentro do repositório que deseja abrir e editar.
 </p>
+
+<h2 id="3">:dash: Clean Code</h2>
+<p>
+  <b>Clean Code</b> é o conceito de escrever códigos de forma lara, legível e de fácil compreensão. Há alguns pontos-chave no Clena Code, como: 
+  <ul>
+    <li><b>Legibilidade:</b> escolha de palavras claras e descritivas para variáveis, funções e classes.</li>
+    <li><b>Simplicidade:</b> código simples e direto ao ponto, reduzindo a probabilidade a erros.</li>
+    <li><b>Convenções de Estilo:</b> seguir formatação de código, espaçamento e padrões de nomeclatura.</li>
+    <li><b>Refatoração:</b> revisar e melhorar o código continuamente, eliminando duplicação, simplificando estruturas e mantendo atualizado.</li>
+  </ul>
+  <b>Robert C. Martin</b> publicou, em 2008, o livro <b>Clean Code</b>, um estudo dos princípios e práticas que tornam o código claro e simples. O livro aborda temas como a nomenclatura significativa, funções e métodos, comentários e documentação, além da formatação e estilo, tudo com o objetivo de transformar o código em um projeto de software de sucesso.
+</p>
+
+<h2 id="4">:speech_balloon: HTML</h2>
+<p>
+  <b>HTML</b> é uma linguagem de marcação padrão para documentos projetados para exibição em um navegador da web. <br>Um documento HTML tem uma <b>estrutura básica:</b>
+</p>
+
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Título da página</title>
+    </head>
+    <body>
+        Conteúdo da página
+    </body>
+</html>
+```
+
+<p>Para montar uma página, há tags de <b>Estrutura</b>, sendo elas: </p>
+<ul>
+  <li><code> < header > </code> é o cabeçalho de uma página ou de uma seção dentro da página. Costuma conter logotipo, título, barra de navegação e links.</li>
+  <li><code> < nav > </code> define um conjunto de links de navegação. Útil para acessibilidade, sumário e afins.</li>
+  <li><code> < footer > </code> o rodapé da página. Costuma conter informações do autor, direitos autorais, termos de uso, política de privacidade e informações de contato.</li>
+  <li><code> < article > </code> usada para encapsular um conteúdo autônomo. Como postagens de blogs, notícias e comentários.</li>  
+  <li><code> < section > </code> define uma sessão em uma página. Geralmente agrupa conteúdos temáticos, de forma identificável e em grupo com outras tags.</li>
+  <li><code> < aside > </code> representa uma seção de um conteúdo que costuma tangenciar de outros, como barras laterais.</li>  
+</ul>
