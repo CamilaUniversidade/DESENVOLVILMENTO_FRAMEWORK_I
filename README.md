@@ -6,7 +6,9 @@
   <li><a href="#1">Introdução</a></li>
   <li><a href="#2">GitHub, Git e VSCode</a></li>
   <li><a href="#3">Clean Code</a></li>
-  <li><a href="#4">Tags em HTML</a></li>
+  <li><a href="#4">SOLID</a></li>
+  <li><a href="#5">HTML</a></li>
+  <li><a href="#6">CSS</a></li>
 </ul>
 
 <h2 id="1">:pencil: Introdução</h2>
@@ -67,7 +69,42 @@
   <b>Robert C. Martin</b> publicou, em 2008, o livro <b>Clean Code</b>, um estudo dos princípios e práticas que tornam o código claro e simples. O livro aborda temas como a nomenclatura significativa, funções e métodos, comentários e documentação, além da formatação e estilo, tudo com o objetivo de transformar o código em um projeto de software de sucesso.
 </p>
 
-<h2 id="4">:speech_balloon: HTML</h2>
+<h2 id="4">SOLID</h2>
+<p>
+  <b>Princípios SOLID</b>, um conjunto de diretrizes para escrever código limpo, modular e de fácil manutenção.
+  <ul>
+    <li>
+      <b>S</b>ingle responsibility principle - Princípio da Responsabilidade Única.
+      <ul><li>Cada classe deve ter apenas uma responsabilidade, facilitando a manutenção, reutilização e testabilidade do código.</li></ul>
+    </li>
+  </ul>
+  <ul>  
+    <li>
+      <b>O</b>open/closed principle - Princípio do Aberto/Fechado
+      <ul><li>As entidades de software devem estar abertas para extensão, mas fechadas para modificação, ou seja, novos recursos podem ser adicionados sem alterar o código.</li></ul>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <b>L</b>iskov substitution principle - Princípio da Substituição de Liskov
+      <ul><li>Para garantir o uso correto da herança, as classes derivadas devem ser substituíveis por suas classes base sem afetar a integridade do sistema.</li></ul>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <b>I</b>nterface segregation principle - Princípio da Segregação de Interfaces
+      <ul><li>As interfaces devem ser específicas para os clientes que utilizam.</li></ul>
+    </li>
+  </ul>
+  <ul>
+    <li>
+      <b>D</b>ependenvy inversion principle - Princípio da Inversão de Dependência
+      <ul><li>Os módulos de alto nível não devem depender de módulos de baixo nível, ambos devem depender de abstrações, tornando o código mais flexível e fácil de testar.</li></ul>
+    </li>
+  </ul>
+</p>
+
+<h2 id="5">:speech_balloon: HTML</h2>
 <p>
   <b>HTML</b> é uma linguagem de marcação padrão para documentos projetados para exibição em um navegador da web. <br>Um documento HTML tem uma <b>estrutura básica:</b>
 </p>
@@ -92,4 +129,86 @@
   <li><code> < article > </code> usada para encapsular um conteúdo autônomo. Como postagens de blogs, notícias e comentários.</li>  
   <li><code> < section > </code> define uma sessão em uma página. Geralmente agrupa conteúdos temáticos, de forma identificável e em grupo com outras tags.</li>
   <li><code> < aside > </code> representa uma seção de um conteúdo que costuma tangenciar de outros, como barras laterais.</li>  
+  <li><code> < form > </code> para criar um formulário de entrada do usuário, com atributos como <em>action</em> e <em>method</em>.</li>
+</ul>
+
+<p>Além das estruturas, há as tags de <b>Componentes</b>, sendo elas:</p>
+<ul>
+  <li><code> < h1 / h2 / h3 / h4 / h5 / h6 > </code> para os títulos, do nível 1 ao 6.</li>
+  <li><code> < p > </code> para parágrafos de texto.</li>
+  <li><code> < a > </code> para inserir links, através do <em>href</em>.</li>
+  <li><code> < img > </code> para inserir imagens, através do <em>src</em>, e com a opção de legenda alternativa, com <em>alt</em>.</li>
+  <li><code> < video > </code> para inserir vídeos, através do <em>src</em>, e um atributo de <em>controls</em>.</li>
+  <li><code> < audio > </code> para inserir áudios, através do <em>src</em>, e atributos <em>controls</em>, <em>autoplay</em>, <em>loop</em> e <em>muted</em>.</li>
+  <li><code> < ul > </code> e <code> < li > </code> para listas não ordenadas, sendo <em>li</em> um item da lista.</li>
+  <li><code> < ol > </code> e <code> < li > </code> para listas ordenadas, sendo <em>li</em> um item da lista, e o atributo <em>type</em>, para definir 1, A, a, I, i.</li>
+  <li><code> < table > </code> para inserir tabelas em uma página.</li>
+  <li><code> < tr > </code> define as linhas da tabela.</li>
+  <li><code> < th > </code> define uma célula de cabeçalho da tabela.</li>
+  <li><code> < td > </code> define uma célula da tábela.</li>
+  <li><code> < div > </code> para as divisões de uma página, para fins de estilo e estrutura.</li>
+  <li><code> < span > </code> para estilizar uma parte de um texto.</li>
+  <li><code> < strong > </code> ou <code> < b > </code> para definir o texto como negrito.</li>
+  <li><code> < em > </code> para definir o texto como itálico.</li>
+  <li><code> < code > </code> para inserir um bloco de código.</li>
+  <li><code> < br > </code> para quebra de linha.</li>
+  <li><code> < hr > </code> para quebra de linha com uma divisão horizontal.</li>
+  <li><code> < iframe > </code> para incorporar outro documento HTML, através do <em>src</em>.</li>
+  <li><code> < input > </code> para criar campos de entrada de dados interativos, com atributos <em>type</em> de e-mail, name, value, id, number.</li>
+  <li><code> < button > </code> para inserir botões clicáveis em uma página.</li>
+  <li><code> < select > </code> e <code> < option > </code> para inserir listas suspensas, sendo <em>options</em> as opções da lista.</li>
+  <li><code> < datalist > </code> e <code> < option > </code> para inserir listas de sugestões, sendo <em>options</em> as opções da lista.</li>
+  <li><code> < textarea > </code> para inserir uma área de texto, com <em>rows</em> sendo as linhas, <em>cols</em> as colunas, <em>name</em> para o nome da área de texto.</li>
+  <li><code> < label > </code> para fornecer um rótulo a elementos como <em>input</em>, <em>meter</em>, <em>textarea</em>.</li>
+</ul>
+
+<h2 id="6">CSS</h2>
+<p>
+  CSS, ou <b>Cascading Style Sheets</b>, é uma linguagem de estilo usada para descrever a aparência de um documento escrito em HTML ou XML. <b>Sass, Less e Stylus</b> são alguns pré-processadores CSS, são ferramentas que permitem escrever CSS de maneira mais eficiente e com recursos adicionais. Há algumas configurações principais que o CSS permite fazer, sendo:
+</p>
+<ul>
+  <li><b>Layout</b><br></li>
+  
+  ```css
+  div {
+      margin: 0 auto;
+      width: 50%;
+  }
+  ```
+
+  <li><b>Cores e Fundos</b></li>
+
+  ```css
+  body {
+      background-color: #f0f0f0;
+      color: #333;
+  }
+  ```
+
+  <li><b>Tipografia</b></li>
+
+  ```css
+  p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1em;
+      line-height: 1.5;
+  }
+  ```
+
+  <li><b>Animações e Transições</b></li>
+
+  ```css
+  button:hover {
+      background-color: #ddd;
+      transition: background-color 0.3s ease;
+  }
+  ```
+
+  <li><b>Seletores Avançados</b></li>
+
+  ```css
+  ul li:nth-child(even) {
+      background-color: lightgray;
+  }
+  ```
 </ul>
